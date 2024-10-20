@@ -41,3 +41,8 @@ public class ClusterPrediction
   public uint PredictedClusterId { get; set; }
 }
 
+public class ClusterPredictionWithData : CustomerData
+{
+  [ColumnName("PredictLabel")]
+  public uint PredictedClusterId { get; set; }
+}
