@@ -14,3 +14,14 @@ class CustomerSegmentationExample
 
   }
 }
+public class CustomerData
+{
+  public float Age { get; set; }
+  public float Salary { get; set; }
+}
+
+public class ClusterPrediction
+{
+  [ColumnName("PredictedLabel")]
+  public uint PredictedClusterId { get; set; }
+}
