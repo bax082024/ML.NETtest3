@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ML.NETtest3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a9eda37b4d9ea4c2c72757fbf54d1178d482cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c693b6be1dbfd7d63c626c1dacc552e6c9713c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ML.NETtest3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ML.NETtest3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
