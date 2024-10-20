@@ -1,4 +1,5 @@
-﻿using Microsoft.ML;
+﻿using System;
+using Microsoft.ML;
 using Microsoft.ML.Data;
 
 class CustomerSegmentationExample
@@ -11,6 +12,8 @@ class CustomerSegmentationExample
 
     var pipeline = mlContext.Transforms.Concatenate("Features", nameof(CustomerData.Age), nameof(CustomerData.Salary))
         .Append(mlContext.Clustering.Trainers.KMeans(featureColumnName: "Features", numberOfClusters: 3));
+
+    var model = pipeline.Fit(dataView);
 
   }
 }
