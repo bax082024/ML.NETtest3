@@ -21,6 +21,10 @@ class CustomerSegmentationExample
     // save the model
     mlContext.Model.Save(model, dataView.Schema, "customerClusteringModel.zip");
 
+    // predict cluster
+    var predictions = model.Transform(dataView);
+    var clusters = mlContext.Data.CreateEnumerable<ClusterPredictionWithData>(predictions, reuseRowObject: false);
+
 
 
   }
@@ -36,3 +40,4 @@ public class ClusterPrediction
   [ColumnName("PredictedLabel")]
   public uint PredictedClusterId { get; set; }
 }
+
