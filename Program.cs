@@ -18,6 +18,11 @@ class CustomerSegmentationExample
     // train 
     var model = pipeline.Fit(dataView);
 
+    // save the model
+    mlContext.Model.Save(model, dataView.Schema, "customerClusteringModel.zip");
+
+
+
   }
 }
 public class CustomerData
